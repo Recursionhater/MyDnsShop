@@ -1,0 +1,3 @@
+C:\Users\YN\source\repos\MyDnsShop\MyDnsShop\MyDnsShop.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\YN\source\repos\MyDnsShop\MyDnsShop\MyDnsShop.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\YN\source\repos\MyDnsShop\MyDnsShop\MyDnsShop.Client\obj\Debug\net9.0\staticwebassets.build.json

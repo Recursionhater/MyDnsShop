@@ -1,0 +1,4 @@
+C:\Users\YN\source\repos\MyDnsShop\MyDnsShop\MyDnsShop\wwwroot\app.css
+C:\Users\YN\source\repos\MyDnsShop\MyDnsShop\MyDnsShop\wwwroot\favicon.ico
+wwwroot\app.css
+wwwroot\favicon.ico

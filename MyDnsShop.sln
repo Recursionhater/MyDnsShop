@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDnsShop.Api", "MyDnsShop.Api\MyDnsShop.Api.csproj", "{B03F7984-A941-468B-BAB6-0585EB3FDF8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDnsShop.Client", "MyDnsShop.Client\MyDnsShop.Client.csproj", "{C34AA0FC-6EAA-4458-824C-E9BD2034AEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDnsShop.AppHost", "MyDnsShop.AppHost\MyDnsShop.AppHost.csproj", "{B49C29B0-27B9-401C-8A8A-CA3C1247E29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDnsShop.ServiceDefaults", "MyDnsShop.ServiceDefaults\MyDnsShop.ServiceDefaults.csproj", "{7CFDB2D2-288F-4F3A-91C3-7671FA7B137D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDnsShop.Shared", "MyDnsShop.Shared\MyDnsShop.Shared.csproj", "{D11EF39C-2FF6-438B-95F3-E2FEA9BFB0ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B03F7984-A941-468B-BAB6-0585EB3FDF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03F7984-A941-468B-BAB6-0585EB3FDF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03F7984-A941-468B-BAB6-0585EB3FDF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03F7984-A941-468B-BAB6-0585EB3FDF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C34AA0FC-6EAA-4458-824C-E9BD2034AEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C34AA0FC-6EAA-4458-824C-E9BD2034AEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C34AA0FC-6EAA-4458-824C-E9BD2034AEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C34AA0FC-6EAA-4458-824C-E9BD2034AEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49C29B0-27B9-401C-8A8A-CA3C1247E29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49C29B0-27B9-401C-8A8A-CA3C1247E29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49C29B0-27B9-401C-8A8A-CA3C1247E29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49C29B0-27B9-401C-8A8A-CA3C1247E29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFDB2D2-288F-4F3A-91C3-7671FA7B137D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFDB2D2-288F-4F3A-91C3-7671FA7B137D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFDB2D2-288F-4F3A-91C3-7671FA7B137D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFDB2D2-288F-4F3A-91C3-7671FA7B137D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11EF39C-2FF6-438B-95F3-E2FEA9BFB0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11EF39C-2FF6-438B-95F3-E2FEA9BFB0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11EF39C-2FF6-438B-95F3-E2FEA9BFB0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11EF39C-2FF6-438B-95F3-E2FEA9BFB0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

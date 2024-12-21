@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Diplom\\MyDnsShop\\MyDnsShop.Api\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Diplom\\MyDnsShop\\MyDnsShop.Api\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyDnsShop.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyDnsShop.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MyDnsShop.Api.props",
+      "PackagePath": "build\\MyDnsShop.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MyDnsShop.Api.props",
+      "PackagePath": "buildMultiTargeting\\MyDnsShop.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MyDnsShop.Api.props",
+      "PackagePath": "buildTransitive\\MyDnsShop.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

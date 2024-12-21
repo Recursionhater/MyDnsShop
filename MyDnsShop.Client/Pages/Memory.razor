@@ -1,0 +1,61 @@
+@page "/memory"
+@using MyDnsShop.Shared.Dto
+@inject IMyDnsShopClient Client
+
+<h1>Оперативная память @_memory?.Count() товаров </h1>
+<div style="display: flex; flex-direction: row;justify-content: center; padding: 10px;">
+<FluentTextField style="width: 70%;" @bind-Value="_searchText"/>
+<FluentButton @onclick="Search">Найти</FluentButton>
+</div>
+<FluentDataGrid ItemSize="350" Items="@_memory" Virtualize="true">
+    <TemplateColumn >
+        <FluentCard Height="300px">
+            <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.FlexStart">
+                <FluentGridItem HiddenWhen="GridItemHidden.SmAndDown" lg="2" xxl="2" xl="2" md="2" >
+                    <img style="width: 100%;height: 100%;min-width: 15%;object-fit: contain; "   alt="" src="@context.Image"/>
+                </FluentGridItem>
+                <FluentGridItem  lg="8" xxl="8" xl="8" md="8" sm="8" xs="8">
+                    <h2 style="white-space: normal;">@context.Name</h2>
+                    <p>Тип: @context.Type</p>
+                    <p>Размер: @context.Size ГБ</p>
+                </FluentGridItem>
+                <FluentGridItem lg="2" xxl="2" xl="2" md="2" sm="2" xs="2">
+                    <div style="display: flex;flex-direction: column;justify-content: flex-end;">
+                    <h2>@Random.Shared.Next(1499, 60000)</h2>
+                    <FluentButton Style="width: 90px;">Купить</FluentButton>
+                    </div>
+                </FluentGridItem>
+            </FluentGrid>
+        </FluentCard>
+    </TemplateColumn>
+</FluentDataGrid>
+
+@code {
+    private IQueryable<MemoryDto>? _memory ;
+    private string? _searchText;
+    private IReadOnlyCollection<MemoryDto>? _allmemory;
+    protected override async Task OnInitializedAsync()
+    {
+        _allmemory = await Client.GetMemoriesAsync();
+        _memory = _allmemory.AsQueryable();
+    }
+
+    private void Search()
+    {
+        if (_allmemory is null)
+        {
+            return;
+        }
+        if (_memory is null || _searchText is null)
+        {
+            _memory = _allmemory.AsQueryable();
+            return;
+        }
+
+        _memory = _allmemory
+            .Where(x => x.Name.Contains(_searchText, StringComparison.OrdinalIgnoreCase))
+            .ToList()
+            .AsQueryable();
+        
+    }
+}

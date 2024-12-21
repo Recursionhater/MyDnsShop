@@ -1,0 +1,63 @@
+@page "/gpu"
+@using MyDnsShop.Shared.Dto
+@inject IMyDnsShopClient Client
+
+<h1>Видеокарты @_gpu?.Count() товаров </h1>
+<div style="display: flex; flex-direction: row;justify-content: center; padding: 10px;">
+<FluentTextField style="width: 70%;" @bind-Value="_searchText"/>
+<FluentButton @onclick="Search">Найти</FluentButton>
+</div>
+<FluentDataGrid ItemSize="350" AutoFit="true" Items="@_gpu" Virtualize="true">
+    <TemplateColumn Width="100%" >
+        <FluentCard Height="350px">
+            <FluentGrid AdaptiveRendering="false" Justify="JustifyContent.SpaceBetween">
+                <FluentGridItem HiddenWhen="GridItemHidden.SmAndDown" lg="2" xxl="2" xl="2" md="2" >
+                    <img style="width: 100%;height: 100%;min-width: 15%;object-fit: contain; "   alt="" src="@context.Image"/>
+                </FluentGridItem>
+                    <FluentGridItem lg="8" xxl="8" xl="8" md="8" sm="8" xs="8">
+                        <FluentStack Orientation="Orientation.Vertical" Wrap="true">
+                        <h2 style="white-space: normal;">@context.Name</h2>
+                        <p>Производитель: @context.Brand</p>
+                        <p>Потребляемая мощность: @context.Power ватт</p>
+                        <p>Разрешение: @context.Resolution</p>
+                        <p>Видеопамять: @context.Vram ГБ</p>
+                        </FluentStack>
+                    </FluentGridItem>
+                <FluentGridItem lg="2" xxl="2" xl="2" md="2" sm="2" xs="2">
+                    <h2>@Random.Shared.Next(1499, 60000)</h2>
+                    <FluentButton>Купить</FluentButton>
+                </FluentGridItem>
+            </FluentGrid>
+        </FluentCard>
+    </TemplateColumn>
+</FluentDataGrid>
+
+@code {
+    private IQueryable<GpuDto>? _gpu ;
+    private string? _searchText;
+    private IReadOnlyCollection<GpuDto>? _allGpu;
+    protected override async Task OnInitializedAsync()
+    {
+        _allGpu = await Client.GetGpuAsync();
+        _gpu = _allGpu.AsQueryable();
+    }
+
+    private void Search()
+    {
+        if (_allGpu is null)
+        {
+            return;
+        }
+        if (_gpu is null || _searchText is null)
+        {
+            _gpu = _allGpu.AsQueryable();
+            return;
+        }
+
+        _gpu = _allGpu
+            .Where(x => x.Name.Contains(_searchText, StringComparison.OrdinalIgnoreCase))
+            .ToList()
+            .AsQueryable();
+        
+    }
+}

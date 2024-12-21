@@ -1,0 +1,12 @@
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\bin\Debug\net9.0\MyDnsShop.Shared.deps.json
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\bin\Debug\net9.0\MyDnsShop.Shared.dll
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\bin\Debug\net9.0\MyDnsShop.Shared.pdb
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.AssemblyInfoInputs.cache
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.AssemblyInfo.cs
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.csproj.CoreCompileInputs.cache
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.dll
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\refint\MyDnsShop.Shared.dll
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.pdb
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\ref\MyDnsShop.Shared.dll
+C:\Diplom\MyDnsShop\MyDnsShop.Shared\obj\Debug\net9.0\MyDnsShop.Shared.sourcelink.json
